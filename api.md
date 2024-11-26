@@ -1,6 +1,6 @@
 ## 1. Tạo yêu cầu mở TKQC (gọi tắt oads)
 
-`1. Tạo yêu cầu oads`
+`1. Tạo oads`
 
 - endpoint: `/oads/create`
 - params:
