@@ -1,55 +1,6 @@
 ## 1. Tạo yêu cầu mở TKQC (gọi tắt oads)
 
-`1. Lấy danh sách nền tảng`
-
-- endpoint: `/platform`
-- params:
-- response:
-  ```
-  [
-    {id: 1, name: 'Tiktok', ...},
-    {id: 2, name: 'Google', ...},
-  ]
-  ```
-
-`2. Lấy danh sách tiền tệ`
-
-- endpoint: `/currency`
-- params:
-- response:
-
-  ```
-  [
-    {id: 1, name: 'VNĐ', ...},
-    {id: 2, name: 'USD', ...},
-  ]
-  ```
-
-`3. Lấy danh sách country`
-
-- endpoint: `/country`
-- params:
-- response:
-  ```
-  [
-    {id: 1, name: 'Việt nam', ...},
-    {id: 2, name: 'Trung quốc', ...},
-  ]
-  ```
-
-`4. Lấy danh sách industry`
-
-- endpoint: `/industry`
-- params:
-- response
-  ```
-  [
-    {id: 1, name: 'Thời trang', ...},
-    {id: 2, name: 'Mỹ phẩm', ...},
-  ]
-  ```
-
-`5. Tạo yêu cầu oads`
+`1. Tạo yêu cầu oads`
 
 - endpoint: `/oads/create`
 - params:
@@ -68,6 +19,55 @@
   company_name :
   company_file : Thông tin doanh nghiệp (Ảnh hoặc file)
   customer_id  : Sale mở hộ khách hàng này.
+  ```
+
+`2. Lấy danh sách nền tảng`
+
+- endpoint: `/platform`
+- params:
+- response:
+  ```
+  [
+    {id: 1, name: 'Tiktok', ...},
+    {id: 2, name: 'Google', ...},
+  ]
+  ```
+
+`3. Lấy danh sách tiền tệ`
+
+- endpoint: `/currency`
+- params:
+- response:
+
+  ```
+  [
+    {id: 1, name: 'VNĐ', ...},
+    {id: 2, name: 'USD', ...},
+  ]
+  ```
+
+`4. Lấy danh sách country`
+
+- endpoint: `/country`
+- params:
+- response:
+  ```
+  [
+    {id: 1, name: 'Việt nam', ...},
+    {id: 2, name: 'Trung quốc', ...},
+  ]
+  ```
+
+`5. Lấy danh sách industry`
+
+- endpoint: `/industry`
+- params:
+- response
+  ```
+  [
+    {id: 1, name: 'Thời trang', ...},
+    {id: 2, name: 'Mỹ phẩm', ...},
+  ]
   ```
 
 `6. Lấy danh sách khách hàng thuộc quyền quản lý của sale`
