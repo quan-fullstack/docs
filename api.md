@@ -5,7 +5,7 @@
 - endpoint: `/oads/create`
 - params:
   ```
-  bc_id        :
+  bc_id        : (bỏ, chuyển sang bước CS APPROVE)
   oads_platform: chọn từ `/platform`
   oads_type    : Loại TKQC [Nhà QC, Nhà phân tích]
   oads_name    :
@@ -165,11 +165,14 @@
   ```
   oads_id
   new_status
-  reject_note  : mô tả lỗi nếu từ chối (bắt buộc)
+  reject_note  : mô tả lỗi nếu từ chối
   reject_attach: đính kèm ảnh hoặc file lỗi nếu từ chối
-  service_fee  : bổ sung phí dịch vụ nếu new_status = CS_APPROVED
-  vat          : bổ sung thuế nếu new_status = CS_APPROVED
-  rebate       : bổ sung chiết khấu nếunew_status = CS_APPROVED
+  bcid         : bcid nếu new_status = CS_APPROVED
+  aads_name    : tên tkqc nếu new_status = CS_APPROVED
+  aads_id      : id tkqc nếu new_status = CS_APPROVED
+  service_fee  : phí dịch vụ nếu new_status = CS_APPROVED (không bắt buộc)
+  vat          : bổ sung thuế nếu new_status = CS_APPROVED (không bắt buộc)
+  rebate       : bổ sung chiết khấu nếunew_status = CS_APPROVED (không bắt buộc)
   ```
 - response:
 
